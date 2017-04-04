@@ -1,0 +1,31 @@
+{
+  "name": "mini-hake",
+  "version": "0.0.0",
+  "description": "A mini program demo.",
+  "license": "MIT",
+  "repository": "bang88/mini-hake",
+  "author": "bang <sqibang@gmail.com> github.com/bang88 ",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "npm run lint && ava --verbose",
+		"lint": "tslint --project ./tsconfig.json --fix",
+		"start": "tsc -w",
+		"pretest": "tsc"
+  },
+	"typings": "index.d.ts",
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+		"tslib": "^1.6.0"
+	},
+  "devDependencies": {
+		"@types/node": "^7.0.8",
+    "ava": "^0.18.2",
+    "tslint": "^4.5.1",
+    "tslint-eslint-rules": "^3.5.1",
+    "typescript": "^2.2.1"
+  }
+}
